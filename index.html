@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dharsh-games | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Dharsh<span>Games</span></div>
+    <nav>
+      <ul>
+       
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search games...">
+      <button id="searchBtn">🔍</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to<span>Dharsh games</span></h1>
+    <p>Explore, Discover & Download the Best PC Games via MediaFire</p>
+  </section>
+
+  <section class="featured-games">
+    <h2>🔥 Featured Games</h2>
+    <div class="games-grid">
+      <div class="game-card">
+        <img src="1.png" alt="NFS">
+        <h3>NFS most wanted 2005</h3>
+        <p>Race through the streets of Rockport City, outrun the cops, and climb the Blacklist in the legendary Need for Speed: Most Wanted (2005) — the ultimate blend of speed, style, and street rivalry.”</p>
+        <a href="https://www.mediafire.com/file/cu0l04c3wwbeir3/Need_For_Speed_Most_Wanted_Win_Setup_EN.zip/file" 
+           class="download-btn" 
+           target="_blank">Download</a>
+      </div>
+      <div class="game-card">
+        <img src="2.webp" alt="Car for sale simulator">
+        <h3>Car for sale simulator</h3>
+        <p>Explore the latest 2023 car models — sleek designs, advanced technology, and unbeatable performance. Find your perfect ride and drive into the future today.”</p>
+        <a href="https://gofile.io/d/Id5JsO" 
+           class="download-btn" 
+           target="_blank">Download</a>
+      </div>
+      <div class="game-card">
+        <img src="3.webp" alt="Gta vice city nextgen edition">
+        <h3>Gta vice city nextgen edition</h3>
+        <p>“Step into the neon-soaked streets of Vice City — where power, crime, and ambition rule. Build your empire in this iconic open-world adventure from the Grand Theft Auto series.”.</p>
+        <a href="https://datavaults.co/z1kytetc4k1h/GTA.Vice.City.NextGen.Edition-P2P.iso" 
+           class="download-btn" 
+           target="_blank">Download via MediaFire</a>
+      </div>
+  
+</section>
+
+  <footer>
+    <p>© 2025 Dharshgames | All Rights Reserved</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400&display=swap');
+
+:root {
+  --bg-color: #0a0a0f;
+  --accent-blue: #00ffff;
+  --accent-red: #ff004c;
+  --text-color: #ffffff;
+  --card-bg: #111122;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url('4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+     font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+/* Optional: Add overlay for better text readability */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: -1;
+}
+
+/* Ensure content stays above background */
+header, main, footer {
+    position: relative;
+    z-index: 1;
+}
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: rgba(10, 10, 20, 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8em;
+  color: var(--accent-blue);
+}
+.logo span {
+  color: var(--accent-red);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+nav a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+  font-weight: 500;
+}
+nav a:hover,
+nav a.active {
+  color: var(--accent-blue);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.search-bar input {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+.search-bar button {
+  background: var(--accent-blue);
+  border: none;
+  color: #000;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.search-bar button:hover {
+  background: var(--accent-red);
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 10%;
+}
+.hero h1 {
+  font-size: 2.5em;
+  color: var(--accent-blue);
+}
+.hero span {
+  color: var(--accent-red);
+}
+.hero p {
+  margin-top: 15px;
+  color: #aaa;
+}
+
+.featured-games {
+  padding: 50px 10%;
+}
+.featured-games h2 {
+  text-align: center;
+  color: var(--accent-blue);
+  margin-bottom: 30px;
+}
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+.game-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: 0.3s;
+}
+.game-card:hover {
+  box-shadow: 0 0 15px var(--accent-blue);
+  transform: scale(1.03);
+}
+.game-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.game-card h3 {
+  margin-top: 10px;
+  color: var(--accent-blue);
+}
+.game-card p {
+  margin: 10px;
+  color: #ccc;
+  font-size: 0.9em;
+}
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: var(--accent-blue);
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 600;
+}
+.download-btn:hover {
+  background: var(--accent-red);
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  border-top: 1px solid #222;
+}
+
+
+</style>
+</body>
+</html>
+
